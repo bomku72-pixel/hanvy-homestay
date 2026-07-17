@@ -9,3 +9,9 @@ def get_engine():
         f"{st.secrets['DB_PASSWORD']}"
         "@aws-0-ap-northeast-1.pooler.supabase.com:6543/postgres"
     )
+from supabase import create_client
+
+url = "https://xxxxx.supabase.co"
+key = "SUPABASE_ANON_KEY"
+
+supabase = create_client(url, key)
